@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>モモンガ＆猫 Tシャツ販売</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      background: #111;
+      margin: 2rem auto;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 900px;
+      transition: transform 0.5s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+
+    .item:hover img {
+      filter: grayscale(0%);
+    }
+
+    .info {
+      padding: 1rem;
+      flex: 1;
+      animation: slideIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .info h2 {
+      margin-top: 0;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      color: #ccc;
+    }
+
+    .details {
+      font-size: 0.95rem;
+      color: #aaa;
+    }
+
+    .transaction {
+      background: #111;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 10px;
+      max-width: 900px;
+      border: 1px solid #333;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .transaction h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    /* アニメーション */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>モモンガ＆猫 Tシャツコレクション</h1>
+    <p>白黒の美しさと共に</p>
+  </header>
+
+  <section class="item">
+    <img src="momonga-tshirt.jpg" alt="モモンガTシャツ">
+    <div class="info">
+      <h2>モモンガTシャツ</h2>
+      <p class="price">価格: ¥3,500</p>
+      <p class="details">シンプルでおしゃれなモモンガデザイン。日常に特別感を。</p>
+    </div>
+  </section>
+
+  <section class="item">
+    <img src="cat-tshirt.jpg" alt="猫Tシャツ">
+    <div class="info">
+      <h2>猫Tシャツ</h2>
+      <p class="price">価格: ¥3,800</p>
+      <p class="details">クールな猫シルエット。モノトーンコーデにぴったり。</p>
+    </div>
+  </section>
+
+  <section class="transaction">
+    <h3>販売取引について</h3>
+    <p>お支払い方法: クレジットカード・銀行振込・コンビニ払い</p>
+    <p>配送: 全国送料無料・3日以内発送</p>
+    <p>返品交換: 商品到着後7日以内</p>
+  </section>
+
+</body>
+</html>
